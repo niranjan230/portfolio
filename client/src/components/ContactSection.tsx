@@ -25,7 +25,7 @@ export default function ContactSection() {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'linkedin.com',
-      link: 'https://linkedin.com',
+      link: 'https://www.linkedin.com/in/niranjan-kollipara-097610256/',
     },
   ];
 
