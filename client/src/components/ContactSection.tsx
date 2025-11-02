@@ -19,7 +19,7 @@ export default function ContactSection() {
       icon: Github,
       label: 'GitHub',
       value: 'github.com',
-      link: 'https://github.com',
+      link: 'https://github.com/niranjan230',
     },
     {
       icon: Linkedin,

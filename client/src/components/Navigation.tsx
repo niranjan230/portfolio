@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface NavigationProps {
@@ -27,9 +27,20 @@ export default function Navigation({ isDark, onToggleTheme }: NavigationProps) {
     }
   };
 
+  const handleResumeClick = () => {
+    // Option 1: Open resume in new tab
+    window.open('/resume.pdf', '_blank');
+    // Option 2: Download resume
+    // const link = document.createElement('a');
+    // link.href = '/resume.pdf';
+    // link.download = 'Niranjan_Kollipara_Resume.pdf';
+    // link.click();
+  };
+
   const navLinks = [
     { name: 'About', id: 'about' },
     { name: 'Skills', id: 'skills' },
+    { name: 'Experience', id: 'experience' },
     { name: 'Projects', id: 'projects' },
     { name: 'Achievements', id: 'achievements' },
     { name: 'Contact', id: 'contact' },
@@ -62,6 +73,15 @@ export default function Navigation({ isDark, onToggleTheme }: NavigationProps) {
                 {link.name}
               </Button>
             ))}
+            <Button
+              variant="default"
+              onClick={handleResumeClick}
+              className="ml-2"
+              data-testid="button-resume"
+            >
+              <Download className="h-4 w-4 mr-2" />
+              Resume
+            </Button>
             <Button
               variant="ghost"
               size="icon"
@@ -98,6 +118,15 @@ export default function Navigation({ isDark, onToggleTheme }: NavigationProps) {
                 {link.name}
               </Button>
             ))}
+            <Button
+              variant="default"
+              className="w-full justify-start"
+              onClick={handleResumeClick}
+              data-testid="button-mobile-resume"
+            >
+              <Download className="h-4 w-4 mr-2" />
+              Download Resume
+            </Button>
             <Button
               variant="ghost"
               className="w-full justify-start"

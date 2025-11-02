@@ -31,7 +31,7 @@ export default function Footer() {
               asChild
               data-testid="link-footer-linkedin"
             >
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/niranjan-kollipara-097610256/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-4 w-4" />
               </a>
             </Button>

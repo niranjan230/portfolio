@@ -92,7 +92,7 @@ export default function HeroSection() {
               asChild
               data-testid="link-github"
             >
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/niranjan230" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
@@ -102,7 +102,7 @@ export default function HeroSection() {
               asChild
               data-testid="link-linkedin"
             >
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/niranjan-kollipara-097610256/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
